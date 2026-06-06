@@ -1,11 +1,27 @@
-BEGIN:VCARD
+from pathlib import Path
+
+vcf = """BEGIN:VCARD
 VERSION:3.0
-N:Jerković;Ivan;;;
+
 FN:Ivan Jerković
-ORG:Faculty of Forensic Sciences, University of Split
+N:Jerković;Ivan;;;
+
+ORG:Faculty of Forensic Sciences
+TITLE:Professor
+
 TEL;TYPE=CELL:+385955236199
+
 EMAIL;TYPE=WORK:ijerkovic@forenzika.unist.hr
 EMAIL;TYPE=HOME:ivanjerkovic13@gmail.com
-URL:https://scholar.google.com/citations?hl=hr&user=sSw_3awAAAAJ&view_op=list_works&sortby=pubdate
-NOTE:Ivan Jerković, PhD, Assistant Professor, Forensic Anthropologist
+
+URL:https://scholar.google.com/citations?hl=hr&user=sSw_3awAAAAJ
+URL:https://www.researchgate.net/profile/Ivan-Jerkovic?ev=hdr_xprf
+
+NOTE:Faculty of Forensic Sciences, University of Split
+
 END:VCARD
+"""
+
+path = "/mnt/data/ivan-jerkovic-updated.vcf"
+Path(path).write_text(vcf, encoding="utf-8")
+print(path)
