@@ -1,64 +1,146 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex,nofollow">
-  <title>Ivan Jerković</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: #f5f5f5;
-      display: flex;
-      min-height: 100vh;
-      align-items: center;
-      justify-content: center;
-    }
-    .card {
-      width: 90%;
-      max-width: 430px;
-      padding: 28px;
-      border: 1px solid #c9a227;
-      border-radius: 18px;
-      background: #1a1a1a;
-      text-align: center;
-      box-shadow: 0 0 25px rgba(201,162,39,0.25);
-    }
-    h1 { margin: 0 0 8px; font-size: 28px; }
-    p { margin: 0 0 22px; color: #ccc; }
-    a.button {
-      display: block;
-      text-decoration: none;
-      color: #111;
-      background: #c9a227;
-      padding: 14px 16px;
-      border-radius: 10px;
-      margin: 12px 0;
-      font-weight: bold;
-    }
-    a.secondary {
-      background: transparent;
-      color: #f5f5f5;
-      border: 1px solid #c9a227;
-    }
-    .small { margin-top: 20px; font-size: 13px; color: #aaa; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+
+<title>Ivan Jerković</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #111111;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    width: 92%;
+    max-width: 450px;
+
+    background: #1a1a1a;
+
+    border: 1px solid #c9a227;
+    border-radius: 18px;
+
+    padding: 32px 24px;
+
+    text-align: center;
+
+    box-shadow: 0 0 25px rgba(201,162,39,0.25);
+}
+
+h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.subtitle {
+    margin-top: 10px;
+    margin-bottom: 28px;
+
+    color: #cccccc;
+    line-height: 1.5;
+}
+
+.button {
+    display: block;
+
+    width: 100%;
+
+    padding: 14px 16px;
+    margin: 12px 0;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.primary {
+    background: #c9a227;
+    color: #111111;
+}
+
+.secondary {
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #c9a227;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+}
+
+.footer {
+    margin-top: 25px;
+    color: #999999;
+    font-size: 13px;
+}
+</style>
 </head>
+
 <body>
-  <main class="card">
+
+<div class="card">
+
     <h1>Ivan Jerković</h1>
-    <p>University Department of Forensic Sciences<br>University of Split</p>
 
-    <a class="button" href="ivan-jerkovic.vcf">Save contact</a>
-    <a class="button secondary" href="tel:+385955236199">Call +385 95 523 6199</a>
-    <a class="button secondary" href="mailto:ijerkovic@forenzika.unist.hr">Official email</a>
-    <a class="button secondary" href="mailto:ivanjerkovic13@gmail.com">Gmail</a>
-    <a class="button secondary" href="https://scholar.google.com/citations?hl=hr&user=sSw_3awAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a>
-    <a class="button secondary" href="https://www.researchgate.net/profile/Ivan-Jerkovic?ev=hdr_xprf">ResearchGate</a>
+    <div class="subtitle">
+        Faculty of Forensic Sciences<br>
+        University of Split
+    </div>
 
-    <div class="small">Scan • Save • Contact</div>
-  </main>
+    <a class="button primary"
+       href="https://i-jerkovic.github.io/ivan-jerkovic.vcf">
+       📇 Save Contact
+    </a>
+
+    <a class="button secondary"
+       href="tel:+385955236199">
+       📞 Call +385 95 523 6199
+    </a>
+
+    <a class="button secondary"
+       href="mailto:ijerkovic@forenzika.unist.hr">
+       🏛 Official Email
+    </a>
+
+    <a class="button secondary"
+       href="mailto:ivanjerkovic13@gmail.com">
+       📧 Gmail
+    </a>
+
+    <a class="button secondary"
+       target="_blank"
+       href="https://scholar.google.com/citations?hl=hr&user=sSw_3awAAAAJ&view_op=list_works&sortby=pubdate">
+       🎓 Google Scholar
+    </a>
+
+    <a class="button secondary"
+       target="_blank"
+       href="https://www.researchgate.net/profile/Ivan-Jerkovic?ev=hdr_xprf">
+       🔬 ResearchGate
+    </a>
+
+    <div class="footer">
+        Scan • Save • Contact
+    </div>
+
+</div>
+
 </body>
 </html>
